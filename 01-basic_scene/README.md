@@ -8,7 +8,7 @@ This is the first of several projects to explore Three.js, this repository inclu
 - What objects are made of
 - How to create a camera
 
-## Requirements
+## Requirements for Three.js
 - [three.js](https://threejs.org/) - click download.
 - go to /build and copy three.min.js to project(later projects will use a package manager)
 
