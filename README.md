@@ -1,7 +1,7 @@
 # threejs_foundations
 
 ## About
-This repository is a survey of three.js concepts.
+This repository is a survey of three.js concepts. Three.js sits on top of WebGl to render 2D and 3D content to the browser. WebGL is a web graphics API developed by the Kronos Group. We use three.js so we don't have to use a very low level GLSL--the language used by OpenGL for the GPU.
 
 ### Requirements for Three.js
 #### Manual download
