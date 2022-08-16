@@ -18,3 +18,5 @@ This repository is a survey of three.js concepts. Three.js sits on top of WebGl 
 [02-webpack](/02-webpack/) - Introduces web bundlers and installing three.js from Node.js.
  
 [03-transform-objects](/03-transform-objects/) - Explores how to manipulate Vector3 objects.
+
+[04-animation](/04-animations/) - Showcases different ways to run an animation loop or call a third party libary one.
