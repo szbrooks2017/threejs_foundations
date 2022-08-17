@@ -9,8 +9,19 @@ This repository is a survey of three.js concepts. Three.js sits on top of WebGl 
 - go to /build and copy three.min.js to project
 
 #### NPM download
-- Use [Node.js](https://nodejs.org/en/) to manage packages and dependencies
-- `npm install` to install dependencies
+Download [Node.js](https://nodejs.org/en/download/).
+Run this followed commands:
+
+``` bash
+# Install dependencies (only the first time)
+npm install
+
+# Run the local server at localhost:8080
+npm run dev
+
+# Build for production in the dist/ directory
+npm run build
+```
 
 ## Projects
 [01-basic_scene](/01-basic_scene/) - Explains what is needed to create and render to the web browser a three.js scene with 3D objects.
@@ -20,3 +31,5 @@ This repository is a survey of three.js concepts. Three.js sits on top of WebGl 
 [03-transform-objects](/03-transform-objects/) - Explores how to manipulate Vector3 objects.
 
 [04-animation](/04-animations/) - Showcases different ways to run an animation loop or call a third party libary one.
+
+[05-cameras](/05-cameras/) - Dives into the different type of cameras and use cases, as well as how to control them to build 3D scenes.
