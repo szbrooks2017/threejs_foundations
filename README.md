@@ -33,3 +33,5 @@ npm run build
 [04-animation](/04-animations/) - Showcases different ways to run an animation loop or call a third party libary one.
 
 [05-cameras](/05-cameras/) - Dives into the different type of cameras and use cases, as well as how to control them to build 3D scenes.
+
+[06-fullscreen-and-resizing](/06-fullscreen-and-resizing/) - Explores the options of having your canvas resize to fit different viewports.

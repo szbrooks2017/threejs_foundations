@@ -86,7 +86,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 ```
 
 ### Full screen
-to get full screen we need a way to toggle it, this can be a button or any sort of UI. An easy way, building upon what we've learned is to use a native Javascript event listener for double clicking. We have to see if we are in full screen or not and we have to do this for chrome and Safari. If you don't want to do it for safari then you can leave out the webkit versions.
+to get full screen we need a way to toggle it, this can be a button or any sort of UI. An easy way, building upon what we've learned is to use a native Javascript event listener for [double clicking](https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event). We have to see if we are in full screen or not and we have to do this for chrome and Safari. If you don't want to do it for safari then you can leave out the webkit versions.
 
 ```
 window.addEventListener('dblclick', () =>
