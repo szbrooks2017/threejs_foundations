@@ -35,3 +35,5 @@ npm run build
 [05-cameras](/05-cameras/) - Dives into the different type of cameras and use cases, as well as how to control them to build 3D scenes.
 
 [06-fullscreen-and-resizing](/06-fullscreen-and-resizing/) - Explores the options of having your canvas resize to fit different viewports.
+
+[07-geometries](/07-geometries/) - A look at built in geometries and how to create custom ones.
