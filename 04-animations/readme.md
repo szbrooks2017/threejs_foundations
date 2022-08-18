@@ -1,5 +1,13 @@
 # 04-animations
 
+## About
+There are several ways to creat basic animations, here are some concepts for animation in Three.js
+
+- What an animation loop/ update loop is
+- How to use time in Three.js
+- How to use the Math library with cos, sin, and PI
+- What gsap is
+
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:

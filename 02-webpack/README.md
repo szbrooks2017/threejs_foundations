@@ -1,6 +1,27 @@
 # 02-webpack
 
-Loading three.js manually is easy, but has limitations as there are more classes than can be included in a file. A better way of loading all the dependencies is with a bundler.
+## About
+Loading three.js manually is easy, but has limitations as there are more classes than can be included in a file. A better way of loading all the dependencies is with a bundler. 
+
+In this repository we will learn:
+- How to set up Node.js
+- What bundlers are
+- How to launch a local server
+
+## Setup
+Download [Node.js](https://nodejs.org/en/download/).
+Run this followed commands:
+
+``` bash
+# Install dependencies (only the first time)
+npm install
+
+# Run the local server at localhost:8080
+npm run dev
+
+# Build for production in the dist/ directory
+npm run build
+```
 
 ## Bundlers
 A bundler is a tool which sends assets like JS/CSS/HTML/imgs/ into a new JS output file ready for the web known as the *bundle file*.

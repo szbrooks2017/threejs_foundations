@@ -1,0 +1,19 @@
+/* 
+the * wildcard effects everything
+*{
+    margin: 0;
+    padding: 0;
+} */
+
+/* to eliminate the extra white space when you scroll at the bottom */
+html, body{
+    overflow: hidden;
+}
+
+.webgl{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+

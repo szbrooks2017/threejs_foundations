@@ -1,5 +1,11 @@
 # 03-transform-objects
-Exploring matrices and transforming objects.
+
+## About
+Exploring matrices and transforming objects. In this repository we will learn:
+- What a Vector3 is
+- What an Object3D is
+- How to transform, scale, and move objects
+- How to make an object look at another.
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).

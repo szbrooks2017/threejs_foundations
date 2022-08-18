@@ -12,8 +12,8 @@ This is the first of several projects to explore Three.js, this repository inclu
 - [three.js](https://threejs.org/) - click download.
 - go to /build and copy three.min.js to project(later projects will use a package manager)
 
-## Project Files
-[script.js](/01-basic_scene/script.js) There are four elements needed to create a scene:
+## Setting up a Three.js scene
+[script.js](/01-basic_scene/script.js) There are four elements needed to create a scene: a scene container, objects, a camera, and a renderer.
 
 ### Scene Container
 `const scene = new THREE.Scene()` creates a scene that will hold all the elements of a three.js project

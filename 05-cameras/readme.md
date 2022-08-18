@@ -1,5 +1,13 @@
 # 05-cameras
 
+## About
+There are several different cameras in Three.js, here are the objectives for this repository.
+- What are popular cameras, and their purpose
+- The frustum view
+- How to create custom controls
+- How to use built in controls.
+- Intro to OrbitControls
+
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
