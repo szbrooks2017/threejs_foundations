@@ -2,6 +2,64 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
+
+/**
+ * Textures
+ */
+
+// creating a loading manager
+const loadingManager = new THREE.LoadingManager()
+loadingManager.onStart = () =>
+{
+    console.log('loading started')
+}
+loadingManager.onLoad = () =>
+{
+    console.log('loading finished')
+}
+loadingManager.onProgress = () =>
+{
+    console.log('loading progressing')
+}
+loadingManager.onError = () =>
+{
+    console.log('loading error')
+}
+
+
+// loading textures with native javascript
+const image = new Image()
+const texture = new THREE.Texture(image)
+
+image.onload = () =>{
+    texture.needsUpdate = true
+}
+
+image.src = '/textures/door/color.jpg'
+
+
+// loading textures with texture loader
+const textureLoader = new THREE.TextureLoader(loadingManager)
+const colorTexture = textureLoader.load('/textures/door/color.jpg')
+const alphaTexture = textureLoader.load('/textures/door/alpha.jpg')
+const heightTexture = textureLoader.load('/textures/door/height.jpg')
+const ambientOcclusionTexture = textureLoader.load('/textures/door/ambientOcclusion.jpg')
+const metalnessTexture = textureLoader.load('/textures/door/metalness.jpg')
+const roughnessTexture = textureLoader.load('/textures/door/roughness.jpg')
+const normalTexture = textureLoader.load('/textures/door/normal.jpg')
+
+// colorTexture.repeat.x = 2
+// colorTexture.repeat.y = 3
+// colorTexture.wrapS = THREE.RepeatWrapping
+// colorTexture.wrapT = THREE.RepeatWrapping
+
+// use pie if you want to rotate by a certain amount
+colorTexture.rotation = Math.PI * 0.25
+// if you want to rotate the center then change the pivot point to the center
+colorTexture.center.x = 0.5
+colorTexture.center.y = 0.5
+
+
 /**
  * Base
  */
@@ -15,9 +73,11 @@ const scene = new THREE.Scene()
  * Object
  */
 const geometry = new THREE.BoxGeometry(1, 1, 1)
-const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
+const material = new THREE.MeshBasicMaterial({ map: colorTexture })
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
+
+console.log(geometry.attributes.uv)
 
 /**
  * Sizes
