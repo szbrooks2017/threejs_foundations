@@ -58,7 +58,7 @@ colorTexture.rotation = Math.PI * 0.25
 // if you want to rotate the center then change the pivot point to the center
 colorTexture.center.x = 0.5
 colorTexture.center.y = 0.5
-
+colorTexture.minFilter = THREE.NearestFilter
 
 /**
  * Base
