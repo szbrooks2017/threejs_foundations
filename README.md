@@ -37,3 +37,9 @@ npm run build
 [06-fullscreen-and-resizing](/06-fullscreen-and-resizing/) - Explores the options of having your canvas resize to fit different viewports.
 
 [07-geometries](/07-geometries/) - A look at built in geometries and how to create custom ones.
+
+[08-debug-ui](/08-debug-ui/) - This is how we speed up production and debug problems.
+
+[09-textures](/09-textures/) - What textures are and how to manipulate them.
+
+[10-materials](/10-materials/) - How materials add color to geometries.
